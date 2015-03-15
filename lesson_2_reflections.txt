@@ -1,0 +1,25 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+git init --> creates a .git file no commit is made
+git status --> gives a status report:
+  On branch master
+  Initial commit
+  Untracked files:  ...
+  
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+  with git add you add files to the staging area
+  with git commit you finally commit them to the repository
+  
+____
+git config --global user.name "rolf"
+git config --global user.email "schramek@beuth-hochschule.de"
+nach diesen Befehlen fragt git nicht mehr "pleace tell me who you are" und führt den Befehl aus
+
+dann fragt git nach der commit Annotation und öffnet... offensichtlich ein vi-Derivat
+--> einen anderen Editor angeben!
+--> siehe lesson 1 fünftletze lecture "setting up your workspace" 3:30 min
+git config --global core.editor "'C:\Program Files\Notepad++\notepad++.exe'"
+Jetzt öffnet git commit den Editor, dort in der ersten Zeile den commit-Kommentar eingeben, sichern und schließen
+der commit sollte erfolgreich sein  :-)
+
