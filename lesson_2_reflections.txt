@@ -21,5 +21,15 @@ dann fragt git nach der commit Annotation und öffnet... offensichtlich ein vi-De
 --> siehe lesson 1 fünftletze lecture "setting up your workspace" 3:30 min
 git config --global core.editor "'C:\Program Files\Notepad++\notepad++.exe'"
 Jetzt öffnet git commit den Editor, dort in der ersten Zeile den commit-Kommentar eingeben, sichern und schließen
-der commit sollte erfolgreich sein  :-)
+der commit sollte erfolgreich sein  - funktioniert aber nicht richtig
 
+sublime installiert, core.editor geändert zu sublime
+---------
+git diff    with no arguments compares the working directory with the staging area!
+git diff --staged   compares the staging area with the repository!
+git reset --hard    removes all changes in working directory and staging area
+  this can't be undone!!
+  
+Branches
+git branch     shows all branches, the one checked out has an asterisc
+git branch easy-mode     creates this branch
