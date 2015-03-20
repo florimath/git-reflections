@@ -1,5 +1,5 @@
 
-with ssh  how does this work?
+with ssh  (how does this work?)
 git@github.com:florimath/git-reflections.git
 
 without ssh:
@@ -8,7 +8,7 @@ https://github.com/florimath/git-reflections.git
 update origin repo on local computer for not using ssh:
 git remote set-url origin https://github.com/florimath/git-reflections
 
-now   git push origin master  works
+git push origin master     now works
 asked for username     :florimath
 asked für password     :...
 Counting objects: 9, done.
@@ -24,6 +24,11 @@ Make changes on Github
 
 When would you want to use a remote repository rather than keeping all your work local?
 To synchronize my work when done from another computer or from another person..
+
+
+If you prefer working with the command line, you can also install a native Git shell, such as msysgit. With msysgit, running the following in the command line will store your credentials:
+
+git config --global credential.helper wincred
 
 
 
